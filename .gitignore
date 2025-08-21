@@ -1,6 +1,7 @@
 .DS_Store
 .ipynb_checkpoints/
 cdisc-json-validation/
+venv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
