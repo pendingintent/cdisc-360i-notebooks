@@ -26,7 +26,6 @@ Future releases will support additional notebook environments, object stores and
 |                                           |* Uses Google Drive as Object Store                                |
 |                                           |* Requires Colab env setup for Google Drive                        |
 |                                           |* Development has stopped for this version                         |
-|-------------------------------------------|-------------------------------------------------------------------|
 |CDISC_360i_Object_Store_Automation         |* Does not copy study artifacts to local filesystem, but works entirely with objects in Object Store    |
 |                                           |* Uses Google Drive as Object Store                                |
 |                                           |* Requires Colab env setup for Google Drive                        |
