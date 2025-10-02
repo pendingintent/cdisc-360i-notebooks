@@ -1,0 +1,22 @@
+FROM postgres:18
+
+ADD ./init-db.sh /docker-entrypoint-initdb.d/
+
+RUN ["apt-get","update"]
+RUN ["apt-get", "install", "-y", "wget"]
+RUN ["apt-get", "install", "-y", "git"] 
+RUN ["apt-get", "install", "-y", "python3"]
+RUN ["apt-get", "install", "-y", "pip"]
+RUN ["apt-get", "install", "-y", "python3-pandas"]
+RUN ["apt-get", "install", "-y", "python3-sqlalchemy"]
+RUN ["apt-get", "install", "-y", "python3-psycopg2"]
+RUN ["git", "clone", "https://github.com/alidootson/UpdatedCDISCPilotData.git"]
+
+WORKDIR /UpdatedCDISCPilotData/UpdatedCDISCPilotData/CDASH/csv\ versions
+
+COPY startup.sh .
+COPY db-import.py .
+
+RUN ["chmod", "+x", "startup.sh"]
+#ENTRYPOINT [ "./startup.sh" ]
+
