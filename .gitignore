@@ -4,3 +4,4 @@ venv/
 output/
 output_from_main/
 tmp*/
+core.tar.gz
