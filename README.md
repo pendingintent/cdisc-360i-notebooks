@@ -35,9 +35,11 @@ Future releases will support additional notebook environments, object stores and
 
 ## How To ##
 
-1. Clone the repository or download a notebook
-2. Access [Google Colaboratory](https://colab.google.com/) using your Google account.
-3. Setup MyDrive to match URL requirements of notebook.
+1. Clone the repository 
+2. Change into the cloned directory.
+3. Execute `source initial-startup.sh`
+
+The raw clinical data now exists in the PostgreSQL database.
 
 
 

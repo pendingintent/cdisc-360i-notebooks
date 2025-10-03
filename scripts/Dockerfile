@@ -13,10 +13,9 @@ RUN ["apt-get", "install", "-y", "python3-psycopg2"]
 RUN ["git", "clone", "https://github.com/alidootson/UpdatedCDISCPilotData.git"]
 
 WORKDIR /UpdatedCDISCPilotData/UpdatedCDISCPilotData/CDASH/csv\ versions
+#WORKDIR /app
 
-COPY startup.sh .
 COPY db-import.py .
 
-RUN ["chmod", "+x", "startup.sh"]
-#ENTRYPOINT [ "./startup.sh" ]
+
 
