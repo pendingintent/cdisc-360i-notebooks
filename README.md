@@ -36,12 +36,16 @@ Future releases will support additional notebook environments, object stores and
 
 1. Clone the repository or download a notebook
 2. Access [Google Colaboratory](https://colab.google.com/) using your Google account.
-3. Setup MyDrive to match URL requirements of notebook.
+3. Setup MyDrive to match URL requirements of notebook.  The directory structure in GooGle Drive should appear as:
 
 
+    ![MyDrive/resources/ directory structure](images/resources.png)
 
+    This will ensure the code cells in the CDISC_360i_Protocol_to_Submission notebook.
 
+4. Copy the CDISC_360i_Protocol_to_Submission notebook to the myDrive/Colab Notebooks dirctory:
 
+    ![MyDrive/Colab Notebooks directory structure](images/ColabNotebooks.png)
 
 
 
